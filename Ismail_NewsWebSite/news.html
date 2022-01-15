@@ -25,6 +25,13 @@
         </nav>
       </header>
 
+      <!--Hava Durumu-->
+
+      <a class="weatherwidget-io" href="https://forecast7.com/tr/38d4227d14/izmir/" data-label_1="İZMIR" data-label_2="HAVA DURUMU" data-theme="original" >İZMIR HAVA DURUMU</a>
+
+       <!--Hava Durumu-->
+
+
       <!--slide -->
     
       <div class="slideshow-container">
@@ -66,35 +73,6 @@
 
 
         
-        <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
-        </script>
-        <!--slide -->
 
         <!--card-->
 
@@ -143,9 +121,9 @@
       
     </div>
   <!-- END GRID -->
+
+
   </div>
-  
-  
   <!-- END MAIN -->
   </div>
   
@@ -215,7 +193,48 @@
           
           </section>
 
+
+           <footer>
+             <ul>
+               <li><a href="">İletişim</a></li>
+               <li><a href="">Hakkımızda</a></li>
+               <li><a href="">Abonelik</a></li>
+               <li><a href="">Sosyal Medya</a></li>
+             </ul>
+
+           </footer>
      
+
+            <!--Hava durumu js-->
+
+           <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            </script>
+            <!--Hava durumu js-->
+
+            <!--Slayt js-->
+            <script>
+              var slideIndex = 0;
+              showSlides();
+              
+              function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+              }
+              </script>
+          <!--Slayt js-->
 
 </body>
 </html>

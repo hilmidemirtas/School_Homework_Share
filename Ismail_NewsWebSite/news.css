@@ -34,9 +34,7 @@ body {font-family: Verdana, sans-serif; margin:0}
     background-color: rgb(128, 180, 180);
   }
 
-  .gndm {
-      background-color: darkkhaki;
-  }
+
 
   /* Nav  kodları başlangıç */
 
@@ -48,7 +46,7 @@ body {font-family: Verdana, sans-serif; margin:0}
   .slideshow-container {
     max-width: 1000px;
     position: relative;
-    margin: auto;
+    margin: 2vw auto auto auto;
   }
   
   /* Next & previous buttons */
@@ -137,3 +135,122 @@ body {font-family: Verdana, sans-serif; margin:0}
     .prev, .next,.text {font-size: 11px}
   }
   /* Slide */
+
+
+  /* ---------------kutular------------ */
+
+  /* Center website */
+.main {
+  max-width: auto;
+  margin: auto;
+}
+
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  overflow:hidden;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*---------------kutular-----------*/
+
+/*---------------yazarlar----------*/
+
+
+.yazar, .yazar:before, .yazar:after {
+  box-sizing: inherit;
+  margin: auto 5vw auto 5vw;
+}
+
+.yazarcolumn {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .yazarcolumn {
+    width: 100%;
+    display: block;
+  }
+}
+
+.yazarcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.yazarcon {
+  padding: 0 16px;
+}
+
+.yazarcon::after, .yazarrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.yazarctitle {
+  color: grey;
+}
+
+.yazarbutton {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.yazarbutton:hover {
+  background-color: #555;
+}
+
+/*---------------yazarlar----------*/

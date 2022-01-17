@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="haber.css">
+    <title>FURKAN HABER</title>
+</head>
+<body>
+    <!--Navbar-->
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+    <!--Navbar-->
+
+    <!--Hava Durumu-->
+    <a class="weatherwidget-io" href="https://forecast7.com/tr/40d71n74d01/new-york/" data-label_1="İZMİR" data-label_2="WEATHER" data-theme="original" >İZMİR WEATHER</a>
+
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+
+    <!--Hava Durumu-->
+
+    <!--Üst Kartlar-->
+
+    <!-- MAIN (Center website) -->
+<div class="main">
+
+
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row_kartust">
+      <div class="colum_kartust">
+        <div class="content">
+          <img src="https://picsum.photos/id/230/500/300" alt="Mountains" style="width:100%">
+          
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, et.</p>
+        </div>
+      </div>
+      <div class="colum_kartust">
+        <div class="content">
+        <img src="https://picsum.photos/id/231/500/300" alt="Lights" style="width:100%">
+         
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, et.</p>
+        </div>
+      </div>
+      <div class="colum_kartust">
+        <div class="content">
+        <img src="https://picsum.photos/id/232/500/300" alt="Nature" style="width:100%">
+          
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, et.</p>
+        </div>
+      </div>
+      <div class="colum_kartust">
+        <div class="content">
+        <img src="https://picsum.photos/id/258/500/300" alt="Mountains" style="width:100%">
+          
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, et.</p>
+        </div>
+      </div>
+
+      <div class="colum_kartust">
+        <div class="content">
+        <img src="https://picsum.photos/id/218/500/300" alt="Mountains" style="width:100%">
+          
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, et.</p>
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+    </div>
+
+    <!--Üst Kartlar-->
+
+    <!--Slide-->
+
+    <h2 style="text-align:center">Slideshow Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://picsum.photos/id/258/500/300g" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="https://picsum.photos/id/258/500/300" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://picsum.photos/id/258/500/300" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://picsum.photos/id/258/500/300" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://picsum.photos/id/258/500/300" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://picsum.photos/id/258/500/300" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="https://picsum.photos/id/258/500/300" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://picsum.photos/id/258/500/300" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://picsum.photos/id/258/500/300" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://picsum.photos/id/258/500/300" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://picsum.photos/id/258/500/300" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="https://picsum.photos/id/258/500/300" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+    <!--Slide-->
+
+</body>
+</html>

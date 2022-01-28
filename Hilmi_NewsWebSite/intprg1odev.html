@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" rel="type/css" href="intprg1odev.css">
+    <title>İnternet Programcılığı 1 Proje Ödevi</title>
+</head>
+<body>
+
+    <!--NAVBAR-->
+      
+    <header>
+        <nav>
+          <ul class="ul">
+            <li class="li ben"><a href="https://github.com/hilmidemirtas">HİLMİ DEMİRTAŞ</a></li>
+            <li class="li"><a href="#intprg1odev.html">YAZARLAR</a></li>
+            <li class="li"><a href="#intprg1odev.html">GÜNDEM</a></li>
+            <li class="li"><a href="#intprg1odev.html">SON DAKİKA</a></li>
+            <li class="li"><a href="#intprg1odev.html">SPOR</a></li>
+            <li class="li"><a href="#intprg1odev.html">HAYAT</a></li>
+            <li class="li"><a href="#intprg1odev.html">DÜNYA</a></li>
+            <li class="li"><a href="#intprg1odev.html">EKONOMİ</a></li>
+            <li class="li"><a href="#intprg1odev.html">OTOMOTİV</a></li>
+            <li class="li"><a href="#intprg1odev.html">E-ABONELİK</a></li>
+            
+          </ul>
+        </nav>
+      </header>
+
+    <!--NAVBAR-->
+
+    <!--Section (sol-slayt-sağ)-->
+
+    <section class="sec1">
+                            <!--sol-->
+                 <article class="art art1">
+            <div>
+            <h2>Faiz Kararı</h2>
+            <p><a href="#haber">EBRD Türkiye: Enflasyonla mücadele faizle yapılır, Türkiye başka bir yol izliyor...</a></p>
+            </div>
+
+            <div>
+            <h2>TÜİK: Ekonomiye güven ocakta arttı</h2>
+            <p><a href="#haber">TÜİK verilerine göre, ekonomik güven endeksi ocakta önceki aya göre yüzde 2,7 oranında arttı.</a></p>
+            </div>
+
+             <div>
+            <h2>Tesla, Türkiye ofisi için iş ilanı açtı</h2>
+            <p><a href="#haber">EBRD Türkiye: Enflasyonla mücadele faizle yapılır, Türkiye başka bir yol izliyor...</a></p>
+            </div>
+
+            <div>
+            <h2>Enflasyonist ortam sanayiciye kaybettiriyor</h2>
+            <p><a href="#haber">Sanayici korkuyor...</a></p>
+            </div>
+        
+                 </article>
+                           <!--sol-->
+
+                            <!--slayt-->
+                 <article class="art art2">
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                 
+                    <img src="https://ethereum.org/static/28214bb68eb5445dcb063a72535bc90c/9019e/hero.webp" style="width:100%">
+                    <div class="text">Ethereum'a Neler Oluyor?</div>
+                  </div>
+
+                <div class="mySlides fade">
+                  
+                  <img src="https://d2x51gyc4ptf2q.cloudfront.net/content/uploads/2021/09/30082119/Cristiano-Ronaldo-Man-Utd-F365.jpg" style="width:100%;height: fit-content;">
+                  <div class="text">Ronaldo Yılın Golünü Attı</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  
+                  <img src="https://static.birgun.net/resim/haber-detay-resim/2021/10/12/dolar-9-02-ye-vurdu-931180-5.jpg" style="width:100%">
+                  <div class="text">Dolar Yükseliyor</div>
+                </div>
+                
+                
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
+                <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+                 </article>
+                            <!--slayt-->
+
+
+                            <!--sağ-->
+                 <article class="art art1">
+                 <div>
+                      <h2>Netflix, Meghan Markle’ın projesi için yapımcı arıyor</h2>
+                      <p><a href="#haber">Netflix, kraliyetten ayrılan olaylı çiftle yaptığı anlaşma sonucunda iş ilanı yayınladı. ...</a></p>
+                      </div>
+
+                      <div>
+                      <h2>Beatles hatıraları NFT olarak satışta</h2>
+                      <p><a href="#haber">John Lennon'un oğlu Julian Lennon, bazı Beatles parçalarını NFT olarak açık artırmaya sunuyor...</a></p>
+                      </div>
+
+                      <div>
+                      <h2>Beyaz Saray’ın yeni sakini: Kedi Wilson</h2>
+                      <p><a href="#haber">ABD Başkanı Joe Biden ve First Lady Jill Biden, yeni  bir kedi sahiplendi...</a></p>
+                      </div>
+                      
+                <div>
+                      <h2>2022 yılında dünyayı neler bekliyor?</h2>
+                      <p><a href="#haber">Öyle kolay ve yumuşak etkilere sahip bir 2022 deği  bunu baştan belirtelim...</a></p>
+                </div>
+                 </article>
+                             <!--sağ-->
+
+
+    </section>
+
+   <!--Section (sol-slayt-sağ)-->
+
+
+   <!--içerik-->
+    <section>
+        <!-- MAIN (Center website) -->
+<div class="main">
+
+
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="https://picsum.photos/id/237/400/150" alt="dog" style="width:100%">
+          <h2>Hayvan Haklarında Gelişmeler...</h2>
+          <p>Sivil toplum kuruluşları ile ortak mutabakata varıldı. Sokak hayvanları için düzenlemeler yolda...</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://picsum.photos/id/7/400/150" alt="Lights" style="width:100%">
+          <h2>Starbucks İnterneti iyileştiliyor</h2>
+          <p>Popüler kahve dedi Starbucks gelen talepler doğrultusundan internet hizmeti için iyileştiliyor...</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://picsum.photos/id/3/400/150" alt="Nature" style="width:100%">
+          <h2>Elektronik Fiyatlarındaki Artış...</h2>
+          <p>Fiyat artışı tepki toplamaya devam ediyor. Yetkililer: "Sorun Kur Kaynaklı..."</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="https://picsum.photos/id/57/400/150" alt="Mountains" style="width:100%">
+          <h2>Popüleritesini Yitirdi...</h2>
+          <p>Instagram fenomenlerinin sıklıkla gittiği İtalya'nın güney kesimleri turist bekliyor... </p>
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+
+    <div class="row">
+        <div class="column">
+          <div class="content">
+            <img src="https://picsum.photos/id/378/400/150" alt="Mountains" style="width:100%">
+            <h2>Depresyonunda Ciddi Yükseliş...</h2>
+            <p>İngiliz Prensi Harry'in "İşinizi sevmiyorsanız bırakın..." sözü zaten depresyonda olanlar tarafından tepkiyle karşılandı...</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="https://picsum.photos/id/27/400/150" alt="Lights" style="width:100%">
+            <h2>Yalnız Adam...</h2>
+            <p>Yıllardır yalnız... Fakat yalnızlığa övgüleri pek doğru bulmuyor. Kısmen hayata kısmen ise kendi tercihine bağlıyor yalnızlığını...</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="https://picsum.photos/id/107/400/150" alt="Nature" style="width:100%">
+            <h2>Tarımda Verimlilik Artıyor...</h2>
+            <p>Teknolojinin toprağa entegre olmasıyla hem verimlilik hem de sürdürebilirlik artıyor. Çiftçiler halinden memnun...</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <img src="https://picsum.photos/id/437/400/150" alt="Mountains" style="width:100%">
+            <h2>Küçük Prens'in Yazıldığı Evi...</h2>
+            <p>Küçük Prens hangimizi yaralamadı ki...Küçük Prens'in yazıldığı ev otel oldu. Torunlar paraya sıkışmış. Fiyatlar cazip...</p>
+          </div>
+        </div>
+      <!-- END GRID -->
+      </div>
+    
+    
+    <!-- END MAIN -->
+    </div>
+    </section>
+
+   <!--içerik-->
+
+
+
+   <!--footer-->
+
+    <footer>
+        <ul class="ul">
+            <li class="li ben"><a href="intprg1odev.html">HİLMİ DEMİRTAŞ</a></li>
+            <li class="li"><a href="#intprg1odev.html">İLETİŞİM</a></li>
+            <li class="li"><a href="#intprg1odev.html">HAKKIMIZDA</a></li>
+            <li class="li"><a href="">TELİF HAKLARI</a></li>
+          </ul>
+    </footer>
+
+     <!--footer-->
+       
+</body>
+</html>
